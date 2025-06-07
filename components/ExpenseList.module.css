@@ -1,0 +1,107 @@
+.listContainer {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.listContainer h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+
+.table th,
+.table td {
+  padding: 12px 10px; /* Increased padding */
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #495057;
+  font-weight: 600;
+  text-transform: uppercase; /* Optional: for header emphasis */
+}
+
+/* Styles for ExpenseItem rows */
+.expenseRow:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping */
+}
+
+.expenseRow:hover {
+  background-color: #f1f1f1;
+}
+
+.amountCell {
+  text-align: right;
+  font-weight: 500; /* Make amount slightly bolder */
+}
+
+.actionsCell {
+  text-align: center;
+}
+
+.actionsCell button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.actionsCell button:hover {
+    transform: translateY(-1px); /* Slight lift effect */
+}
+
+.editButton {
+  background-color: #ffc107; /* Yellow */
+  color: #212529;
+  margin-right: 8px;
+}
+
+.editButton:hover {
+  background-color: #e0a800;
+}
+
+.deleteButton {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #c82333;
+}
+
+.noExpensesMessage {
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive table: horizontal scroll on small screens */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+@media (max-width: 600px) {
+  .table th,
+  .table td {
+    padding: 10px 8px;
+    font-size: 0.9em; /* Slightly smaller font on mobile */
+  }
+
+  .actionsCell button {
+    margin-bottom: 5px; /* Stack buttons slightly apart if they wrap */
+  }
+}
