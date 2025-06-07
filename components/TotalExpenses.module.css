@@ -1,0 +1,32 @@
+.totalContainer {
+  background-color: #e9ecef; /* Light grey, similar to Bootstrap's alert-secondary or table head */
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-top: 20px; /* Space above it */
+  margin-bottom: 20px; /* Space below it */
+  text-align: right; /* Align text to the right, common for totals */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.totalText {
+  font-size: 1.25em; /* Larger font size for emphasis */
+  font-weight: 600; /* Bold */
+  color: #2c3e50; /* Dark, modern blue/grey */
+}
+
+.totalLabel {
+  margin-right: 10px; /* Space between label and amount */
+  color: #495057; /* Slightly softer color for the label */
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .totalContainer {
+    text-align: center; /* Center on small screens */
+    padding: 12px 15px;
+  }
+  .totalText {
+    font-size: 1.15em;
+  }
+}

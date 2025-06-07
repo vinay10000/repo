@@ -1,0 +1,29 @@
+.chartContainer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  margin-top: 30px;
+  min-height: 250px; /* Ensure it has some height even when empty */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center placeholder text */
+}
+
+.chartContainer h2 {
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.placeholderText {
+  color: #777;
+  font-style: italic;
+}
+
+/* Styles for when a chart is actually rendered (e.g., canvas) */
+/* .chartCanvas {
+  max-width: 100%;
+  max-height: 400px;
+} */

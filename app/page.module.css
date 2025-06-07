@@ -1,0 +1,47 @@
+.container {
+  max-width: 900px; /* Slightly wider for comfortable viewing */
+  margin: 0 auto; /* Center the content */
+  padding: 20px;
+  font-family: var(--font-geist-sans), Arial, sans-serif; /* Using font from layout */
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px; /* More space below header */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+  font-size: 2.5em; /* Larger title */
+  color: #2c3e50; /* Darker, more modern blue/grey */
+  font-weight: 600;
+}
+
+/* Layout for main sections - could use Grid or Flexbox if more complex */
+/* For now, default block layout is fine as components have their own margins */
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  color: #7f8c8d; /* Softer grey for footer */
+}
+
+/* Responsive adjustments for container padding or header font size if needed */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  .header h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.8em;
+  }
+}
